@@ -54,7 +54,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
               </div>
             </div>
           }
-          bordered={false}
+          variant="borderless"
         />
       </div>
     </div>
