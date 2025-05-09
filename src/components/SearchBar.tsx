@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { Input } from 'antd';
 import { Mic, Search } from 'lucide-react';
-import GoogleLogo from './GoogleLogo';
 
 type SearchBarProps = {
   onSearch?: (value: string) => void;
@@ -82,7 +81,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
     <div className="relative w-full max-w-2xl">
       <div className="flex items-center bg-white rounded-full shadow-lg px-5 py-3 hover:shadow-xl transition-shadow">
         <div className="flex-shrink-0 mr-3">
-          <GoogleLogo />
+          <span className="text-blue-600 text-2xl font-medium">Search</span>
         </div>
         <Input
           className="flex-1 border-none shadow-none text-lg focus:outline-none"
