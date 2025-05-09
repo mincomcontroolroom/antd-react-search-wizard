@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Input } from 'antd';
-import { Microphone, Search } from 'lucide-react';
+import { Mic, Search } from 'lucide-react';
 import GoogleLogo from './GoogleLogo';
 
 type SearchBarProps = {
@@ -44,7 +44,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
                   // Implement voice search functionality here
                 }}
               >
-                <Microphone className="h-5 w-5 text-blue-500" />
+                <Mic className="h-5 w-5 text-blue-500" />
               </div>
               <div 
                 className="cursor-pointer ml-2 text-gray-400 hover:text-gray-600 p-1"
